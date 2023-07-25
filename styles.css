@@ -1,0 +1,135 @@
+form {
+        padding: 2%;
+        padding-left: 3%;
+        border: 2px solid #c2d1c3 ;
+        margin: auto ;
+        width: 35pc;
+        margin-top: 20px;
+        height: 70;
+        background-color: rgb(23, 6, 6);
+        opacity: 1;
+        border-radius: 8px;
+        /* animation-name: example;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        position: relative;         */
+    }
+
+    .div1{
+        height: 25px;
+        width: 140px;
+        animation-name: div_example;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        position: absolute; 
+        font-weight: bold;
+        text-align: center;
+        
+    }
+
+    /* @keyframes example{
+        0%{left:0px;top:0px;}
+        25%{left:50px;top:0px;}
+        50%{left:50px;top:50px;}
+        75%{left:0px;top:50px;}
+        100%{left:0px;top:0px;} */
+    @keyframes div_example{
+        0%{background-color: brown; left:0%;bottom:0%;}
+        25%{background-color: rgb(50, 165, 42);left:88.5%;bottom:0%;}
+         50%{background-color: rgb(42, 71, 165);left:88.5%;bottom:92%;}
+         75%{background-color: rgb(165, 42, 108);left:0%;bottom: 92%;}
+        100%{background-color: brown;left:0%;bottom:0%; 
+        } 
+       
+    }
+h1 {
+    margin-top: -5px;
+    color: rgb(145, 182, 188);
+    padding: 5PXpx;
+    text-align: center;
+    font-style: italic;
+      
+  }
+  h1::selection {
+    color: red;
+  background: yellow;
+  }
+  
+    * {
+        padding:  1%;
+    }
+label  {
+    color: rgb(245, 247, 242);
+
+}
+.col-3{
+    margin-bottom: 30px;
+}
+.col-1:hover {
+    background-color: coral;
+    color: rgb(49, 243, 10);
+    font-weight: bold;
+}
+
+
+body {
+    
+    background-image: url("images/bg5.jpg");
+        background-position: left;
+        background-repeat: repeat;
+        background-size: 100%;
+        
+    }
+    div>p{
+        margin-bottom: 30px;
+
+    }
+    input {
+        background: transparent;
+        color: beige;
+        font-weight: bold;
+        /* margin-bottom: 30px; */
+
+    }
+    label {
+        font-family: 'Courier New', Courier, monospace;
+        /* font-style: italic; */
+        font-size: larger;
+    }
+
+    .grid-container {
+        display:  grid;
+        grid : 40px/auto auto;
+    }
+    #Course ,#Branch ,#Semester {
+        width: 170px;
+        background-color: rgb(173, 210, 210);
+            
+    }
+
+#submit {
+        margin-left: 150px;
+        color: rgb(148, 8, 83);
+        background-color: rgb(156, 156, 182);
+        font-size: large;
+        font-weight: bold;
+    }
+
+    
+ #submit:link{
+    color : red;
+
+ }
+ #submit:visited{
+    color : rgb(0, 255, 26);
+    font-weight: bold;
+
+ }
+ #submit:hover{
+    color : rgb(103, 135, 203);
+
+ }
+ #submit:active{
+    color : rgb(54, 5, 248);
+
+ }

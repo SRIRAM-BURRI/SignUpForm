@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<HTML lang='en'>
+
+<head>
+    <meta charset="utf">
+    <meta name="viewport" content="width=device-width, initial-scal = 1.0">
+    <meta name="keywords" content="html , css ,javaScript">
+    <title> Student Registation Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="FORM.JS"></script>
+
+
+</head>
+
+<body>
+    <form class="form" action="https://github.com/SRIRAM-BURRI">
+        <h1> STUDENT REGISTATION FORM</h1>
+        <div class="grid-container">
+
+            <div class="col-1">
+                <label for='fname'>Name</label>&nbsp;&nbsp;
+            </div>
+
+            <div class="col-2">
+                <input type="text" onchange="i_name()" id="user" placeholder="Name"  minlength="3" maxlength="8"><span id="name_span"
+                    style="color: white;"></span>
+            </div>
+            <div class="col-1"><label>DOB</label>&nbsp;&nbsp;</div>
+
+            <div class="col-2">
+                <input type="date" id="dob" placeholder="DATE" required><label>(DD-MM-YYYY)</label><br><br>
+            </div>
+            <div class=col-1>
+                <label>Gender</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <input type="radio" id="radio" name="Gender" required><label>Male</label>;
+                <input type="radio" id="radio" name="Gender" required><label>Female</label><br><br>
+            </div>
+
+            <div class="col-1">
+                <label>Mail Id</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <input type="text" id='email' onchange="i_email()" placeholder="enter the email" required><br>
+                <span id="email_span" style="color: white;"></span><br>
+            </div>
+            <div class="col-1">
+                <label>Mobile number</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <input type="text" id='number'  onchange="i_phno()"  placeholder="enter the number" required>
+                <span id="phno_span" style="color: white;"></span><br><br>
+            </div>
+            <div class="col-1">
+                <label>Password</label>
+            </div>
+            <div class="col-2">
+                <input type="password" id='password' onchange="i_pswd()" placeholder="enter the password" required>
+                <span id="pswd_span" style="color: white;"></span><br><br>
+            </div>
+            <div class="col-1">
+                <label>Re Password</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <input type="password" id='password1' onchange="i_rpswd()" placeholder="Enter re enter password"required><span
+                    id="rpswd_span" style="color: white;"></span><br><br>
+            </div>
+            <div class="col-1">
+                <label for="Course">Course</label>&nbsp;&nbsp;
+            </div>
+            <div class=" col-2">
+                <select name="Course" id="Course" required>
+                    <option value="">Select Course</option>
+                    <option value="Ph.D">Ph.d</option>
+                    <option value="DEGREE">DEGREE</option>
+                    <option value="B.TECH">B.Tech</option>
+                </select><br><br>
+            </div>
+
+            <div class="col-1">
+                <label for="Branch">Branch</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <select name="Branch" id="Branch" required>
+                    <option value="">Select Branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="ECE">ECE</option>
+                    <option value="EEE">EEE</option>
+                </select><br><br>
+            </div>
+
+            <div class="col-1">
+                <label for="Semester">Semester</label>&nbsp;&nbsp;
+            </div>
+            <div class="col-2">
+                <select name="Semester" id="Semester" required>
+                    <option value="">Select Semister</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select><br><br>
+            </div>
+            <button type="submit" id='submit'>Register
+            </button>
+        </div>
+    </form>
+    <div class="div1">Fill Up the form</div>
+
+
+</body>
+
+
+
+
+</HTML>
